@@ -3,449 +3,417 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>KUAC — Study in Korea, end to end. Trusted guidance from people who've done it.</title>
-<meta name="description" content="KUAC helps international students apply to Korea's top universities — admission, scholarships, visas, and arrival support. The official partner of leading Korean universities." />
+<title>KUAC — The official partner to study in Korea.</title>
+<meta name="description" content="KUAC partners with Korea's leading universities to bring international students from admission to arrival, with one accountable counsellor in your language." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Announcement bar -->
-<div class="announce">
-  <div class="container announce-row">
-    <span><strong>2026 Fall intake</strong> — applications now open. Talk to a KUAC counsellor today.</span>
-    <a href="#apply" class="announce-cta">Start now <span aria-hidden="true">→</span></a>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="site-header" id="siteHeader">
-  <div class="container header-row">
-    <a href="#" class="brand" aria-label="KUAC home">
-      <span class="brand-mark"><span class="bm-k">K</span><span class="bm-u">U</span><span class="bm-a">A</span><span class="bm-c">C</span></span>
-      <span class="brand-sub">Korean Universities Admission Center</span>
+<!-- ============== HEADER ============== -->
+<header class="masthead" id="masthead">
+  <div class="masthead-inner">
+    <a href="#" class="logo" aria-label="KUAC home">
+      <span class="logo-mark"><span class="bm-k">K</span><span class="bm-u">U</span><span class="bm-a">A</span><span class="bm-c">C</span></span>
+      <span class="logo-sub">Korean Universities<br/>Admission Center</span>
     </a>
 
-    <nav class="nav" aria-label="Primary">
-      <ul class="nav-list">
-        <li><a href="#why">Why KUAC</a></li>
-        <li><a href="#process">How it works</a></li>
-        <li><a href="#universities">Universities</a></li>
-        <li><a href="#scholarships">Scholarships</a></li>
-        <li><a href="#stories">Stories</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#universities">Universities</a>
+      <a href="#scholarships">Scholarships</a>
+      <a href="#stories">Stories</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <div class="header-actions">
-      <div class="lang" role="group" aria-label="Language">
-        <button class="lang-btn is-active" data-lang="EN">EN</button>
-        <button class="lang-btn" data-lang="한">한</button>
-        <button class="lang-btn" data-lang="中">中</button>
+    <div class="masthead-actions">
+      <div class="lang">
+        <button class="is-on">EN</button>
+        <button>한</button>
+        <button>中</button>
       </div>
-      <a href="#apply" class="btn btn-primary btn-sm">Apply now</a>
+      <a href="#apply" class="pill">Begin <span aria-hidden="true">→</span></a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
     </div>
   </div>
 
-  <!-- Mobile drawer -->
   <div class="mobile-drawer" id="mobileDrawer" hidden>
-    <ul>
-      <li><a href="#why">Why KUAC</a></li>
-      <li><a href="#process">How it works</a></li>
-      <li><a href="#universities">Universities</a></li>
-      <li><a href="#scholarships">Scholarships</a></li>
-      <li><a href="#stories">Stories</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#apply" class="btn btn-primary btn-block">Apply now</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#universities">Universities</a>
+    <a href="#scholarships">Scholarships</a>
+    <a href="#stories">Stories</a>
+    <a href="#contact">Contact</a>
+    <a href="#apply" class="pill">Begin →</a>
   </div>
 </header>
 
-<!-- Hero -->
+<!-- ============== HERO ============== -->
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Trusted by 1,000+ students from 30+ countries</p>
-      <h1>
-        Study in <span class="hl">Korea</span>.<br />
-        From first question<br />to first day of class.
-      </h1>
-      <p class="lede">
-        KUAC is the official admission partner to Korea's top universities for international students. We handle admission, scholarships, visas, and arrival — in your language, with one accountable counsellor from start to finish.
+  <div class="hero-photo" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=2400&q=85&auto=format&fit=crop" alt="" />
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="kicker"><span class="dot"></span>Since 2014 — official admission center</p>
+    <h1 class="display">
+      <span class="line">Study in</span>
+      <span class="line line-accent">Korea.</span>
+    </h1>
+    <p class="hero-tagline">
+      The official admission partner of Korea's leading universities — admission, scholarships, visas, and arrival, in your language, with one counsellor walking with you the whole way.
+    </p>
+    <div class="hero-actions">
+      <a href="#apply" class="cta-primary">Start your application <span aria-hidden="true">→</span></a>
+      <a href="#universities" class="cta-text">Browse partner universities</a>
+    </div>
+  </div>
+
+  <div class="hero-meta" aria-hidden="true">
+    <span class="hangul">한국 유학</span>
+  </div>
+
+  <a href="#about" class="hero-scroll" aria-label="Scroll to next section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============== PARTNER MARQUEE ============== -->
+<section class="marquee">
+  <p class="overline">Partner universities, in confidence</p>
+  <div class="marquee-row">
+    <span>Kyungdong University</span><i>·</i>
+    <span>Seoul National University</span><i>·</i>
+    <span>Yonsei University</span><i>·</i>
+    <span>Korea University</span><i>·</i>
+    <span>KAIST</span><i>·</i>
+    <span>Hanyang University</span><i>·</i>
+    <span>Sungkyunkwan</span><i>·</i>
+    <span>Ajou University</span><i>·</i>
+    <span>INHA University</span><i>·</i>
+    <span>Gachon University</span>
+  </div>
+</section>
+
+<!-- ============== ABOUT (FEATURE) ============== -->
+<section class="feature" id="about">
+  <div class="feature-grid">
+    <aside class="feature-aside">
+      <p class="overline">A short note on KUAC</p>
+      <span class="hangul-large" aria-hidden="true">신뢰</span>
+    </aside>
+    <div class="feature-prose">
+      <p class="display-quote">
+        Most agencies stop at admission. <em>KUAC doesn't.</em> One counsellor, in your language, from the first email to your first day of class in Seoul.
       </p>
-
-      <form class="hero-search" action="#universities">
-        <div class="hs-field">
-          <label for="hs-country">I'm from</label>
-          <select id="hs-country">
-            <option>Select country</option>
-            <option>Nepal</option><option>Pakistan</option><option>India</option>
-            <option>Vietnam</option><option>Uzbekistan</option><option>Mongolia</option>
-            <option>Indonesia</option><option>Cameroon</option><option>Other</option>
-          </select>
+      <div class="feature-stats">
+        <div>
+          <span class="stat-num">1,000<sup>+</sup></span>
+          <span class="stat-label">Students placed</span>
         </div>
-        <div class="hs-field">
-          <label for="hs-level">I want to study</label>
-          <select id="hs-level">
-            <option>Bachelor's</option>
-            <option>Master's</option>
-            <option>PhD</option>
-            <option>Korean language</option>
-          </select>
+        <div>
+          <span class="stat-num">50<sup>+</sup></span>
+          <span class="stat-label">Partner universities</span>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg">Find my university</button>
-      </form>
-
-      <ul class="trust-row">
-        <li><span class="trust-num">50+</span> partner universities</li>
-        <li><span class="trust-num">24h</span> response policy</li>
-        <li><span class="trust-num">10+</span> countries served</li>
-      </ul>
-    </div>
-
-    <div class="hero-card-stack" aria-hidden="true">
-      <div class="hero-card hero-card--1">
-        <div class="hc-pill">Admitted</div>
-        <p>Aisha · Seoul Nat'l University<br /><span>Master's, Computer Science · GKS Scholar</span></p>
-      </div>
-      <div class="hero-card hero-card--2">
-        <div class="hc-pill hc-pill--alt">Visa approved</div>
-        <p>Daniyar · Yonsei University<br /><span>Bachelor's · D-2 visa, 7 days</span></p>
-      </div>
-      <div class="hero-card hero-card--3">
-        <div class="hc-pill hc-pill--soft">Arrived</div>
-        <p>Priya · Korea University<br /><span>Picked up at Incheon, dorm assigned</span></p>
+        <div>
+          <span class="stat-num">10<sup>+</sup></span>
+          <span class="stat-label">Country offices</span>
+        </div>
+        <div>
+          <span class="stat-num">24<span class="stat-unit">h</span></span>
+          <span class="stat-label">Response policy</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Logos / partner strip -->
-<section class="logos">
-  <div class="container">
-    <p class="logos-label">Partner universities include</p>
-    <div class="logos-row">
-      <span>Kyungdong University</span>
-      <span>Seoul National University</span>
-      <span>Yonsei University</span>
-      <span>Korea University</span>
-      <span>KAIST</span>
-      <span>Hanyang</span>
-      <span>Sungkyunkwan</span>
-      <span>Ajou</span>
-      <span>INHA</span>
-      <span>Gachon</span>
-      <span>Hansung</span>
+<!-- ============== WHY — alternating split rows ============== -->
+<section class="why-section">
+  <header class="section-mast">
+    <p class="overline">Why KUAC</p>
+    <h2 class="display-h2">A path designed by people who walked it.</h2>
+  </header>
+
+  <article class="split">
+    <div class="split-image">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"/>
     </div>
-  </div>
+    <div class="split-text">
+      <p class="point-num">01 — Counsel</p>
+      <h3 class="display-h3">One counsellor, end to end.</h3>
+      <p>The same person who shortlists your universities also walks you through your D-2 visa interview, your dorm move-in, and your first week. No handoffs. No copy-pasted answers.</p>
+    </div>
+  </article>
+
+  <article class="split split-reverse">
+    <div class="split-image">
+      <img src="https://picsum.photos/seed/seoul-campus-aerial/1400/1750" alt="" loading="lazy"/>
+    </div>
+    <div class="split-text">
+      <p class="point-num">02 — Verify</p>
+      <h3 class="display-h3">Only universities we know — by name.</h3>
+      <p>Every university you see on KUAC has a signed partnership agreement with us. No diploma mills. No surprises after you arrive. The campus you applied to is the campus you'll wake up on.</p>
+    </div>
+  </article>
+
+  <article class="split">
+    <div class="split-image">
+      <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"/>
+    </div>
+    <div class="split-text">
+      <p class="point-num">03 — Local</p>
+      <h3 class="display-h3">Offices on your continent, not just on Zoom.</h3>
+      <p>KUAC has counsellors and physical offices in Nepal, Pakistan, India, Indonesia, Mongolia, Cameroon, and across Central Asia. Submit documents at home; meet your counsellor in person.</p>
+    </div>
+  </article>
+
+  <article class="split split-reverse">
+    <div class="split-image">
+      <img src="https://images.unsplash.com/photo-1496469888073-80de7e952517?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"/>
+    </div>
+    <div class="split-text">
+      <p class="point-num">04 — Arrive</p>
+      <h3 class="display-h3">Korea, from day one.</h3>
+      <p>Airport pickup at Incheon. Dorm move-in. SIM card. T-money card. A welcome dinner with returning KUAC students. By the time you log in to your university portal, you've already eaten kimchi jjigae with a friend.</p>
+    </div>
+  </article>
 </section>
 
-<!-- Why KUAC -->
-<section class="why" id="why">
-  <div class="container">
-    <header class="section-head">
-      <p class="eyebrow">Why students choose KUAC</p>
-      <h2>The shortest, safest path to a Korean university.</h2>
-      <p class="section-lede">Most agencies stop at admission. We don't. KUAC is the only center that takes you from search to settled, with one team and one accountable counsellor.</p>
-    </header>
-
-    <div class="why-grid">
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-        </div>
-        <h3>One-day response, always</h3>
-        <p>Every email, every form, every question — answered within 24 hours by a real counsellor in your language. No bots, no ghosting.</p>
-      </article>
-
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
-        </div>
-        <h3>One counsellor, end-to-end</h3>
-        <p>The same KUAC counsellor walks with you from your first university shortlist all the way through admission, visa, and arrival in Korea. No handoffs.</p>
-      </article>
-
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a7 7 0 0114 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        </div>
-        <h3>Local offices in 10+ countries</h3>
-        <p>Branches in Nepal, Pakistan, India, Indonesia, Cameroon, Mongolia, and more. Meet your counsellor in person. Submit documents at home.</p>
-      </article>
-
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
-        </div>
-        <h3>Verified, not vague</h3>
-        <p>Every university you see on KUAC has signed a partnership with us. No "fake" diploma mills, no bait-and-switch. What you read is what you get.</p>
-      </article>
-
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M7 9v5c0 2 2 4 5 4s5-2 5-4V9"/></svg>
-        </div>
-        <h3>Scholarship matching</h3>
-        <p>From GKS to university-specific awards, we map your profile to every scholarship you qualify for — and help you write the application that wins it.</p>
-      </article>
-
-      <article class="why-card">
-        <div class="icon icon--circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18"/><path d="M12 3a15 15 0 000 18"/><circle cx="12" cy="12" r="9"/></svg>
-        </div>
-        <h3>Korean from day one</h3>
-        <p>TOPIK preparation modules, language-exchange partners, and on-arrival cultural orientation in Seoul, Bucheon, and Suwon.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Process -->
+<!-- ============== PROCESS — editorial timeline ============== -->
 <section class="process" id="process">
-  <div class="container">
-    <header class="section-head section-head--center">
-      <p class="eyebrow">How it works</p>
-      <h2>Five steps. One counsellor. From search to seoul.</h2>
-    </header>
+  <header class="section-mast section-mast--center">
+    <p class="overline">How it works</p>
+    <h2 class="display-h2">Five steps. <em>One counsellor.</em><br/>From search to Seoul.</h2>
+  </header>
 
-    <ol class="steps">
-      <li>
-        <span class="step-num">01</span>
+  <ol class="timeline">
+    <li>
+      <span class="t-num">01</span>
+      <div>
         <h3>Pick a major</h3>
-        <p>Search 50+ partner universities by program, language of instruction, location, and scholarship availability. We shortlist 3 best-fit options for you.</p>
-      </li>
-      <li>
-        <span class="step-num">02</span>
+        <p>Search 50+ partner universities by program, language of instruction, location, and scholarship eligibility. We shortlist the three that fit you best.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-num">02</span>
+      <div>
         <h3>Submit documents</h3>
-        <p>Upload once, apply many. We translate, notarise, and forward to every university on your list.</p>
-      </li>
-      <li>
-        <span class="step-num">03</span>
+        <p>Upload once, apply many. We translate, notarise, and forward your file to every university on the shortlist.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-num">03</span>
+      <div>
         <h3>Get admitted</h3>
-        <p>We track every decision and negotiate scholarship offers on your behalf. Average 4–6 weeks to first admission letter.</p>
-      </li>
-      <li>
-        <span class="step-num">04</span>
+        <p>We track every decision and negotiate scholarship offers on your behalf. First admission letter typically lands in 4–6 weeks.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-num">04</span>
+      <div>
         <h3>Apply for visa</h3>
-        <p>D-2 visa in 7 days on average. We pre-check every document so the embassy never sends you back.</p>
-      </li>
-      <li>
-        <span class="step-num">05</span>
+        <p>D-2 visa in seven days on average. We pre-check every document so the embassy never sends you back.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-num">05</span>
+      <div>
         <h3>Arrive in Korea</h3>
-        <p>Airport pickup, dorm move-in, sim card, T-money card, and a welcome dinner — all arranged by KUAC. You're not alone on day one.</p>
-      </li>
-    </ol>
-  </div>
+        <p>Met at Incheon, settled into your dorm, and welcomed at dinner. The KUAC counsellor stays with you through orientation week.</p>
+      </div>
+    </li>
+  </ol>
 </section>
 
-<!-- University search preview -->
+<!-- ============== UNIVERSITIES — photo grid ============== -->
 <section class="universities" id="universities">
-  <div class="container universities-grid">
-    <div class="universities-copy">
-      <p class="eyebrow">Find your university</p>
-      <h2>50+ verified universities. Filter by what actually matters.</h2>
-      <p>Language of instruction. City. Scholarship availability. Dormitory. Application deadline. Programs in English vs Korean. We surface what other agencies hide.</p>
-      <a href="#" class="btn btn-secondary">Browse all universities <span aria-hidden="true">→</span></a>
-    </div>
+  <header class="section-mast">
+    <p class="overline">Featured partners</p>
+    <h2 class="display-h2">A few of the universities on offer.</h2>
+    <p class="section-lede">Fifty more behind these. Filter by language of instruction, city, scholarship availability, and program.</p>
+  </header>
 
-    <div class="uni-list">
-      <article class="uni-card">
-        <div class="uni-photo uni-photo--4"></div>
-        <div class="uni-body">
-          <div class="uni-tags"><span>Goseong</span><span>English</span><span>Scholarship</span></div>
-          <h3>Kyungdong University</h3>
-          <p>One of KUAC's flagship partners. Bachelor's and Master's programs across business, hospitality, healthcare, and global studies — with strong support for international students.</p>
-          <a href="#" class="link-arrow">View programs →</a>
-        </div>
-      </article>
+  <div class="uni-grid">
+    <a href="#" class="uni-tile uni-tile--lg">
+      <img src="https://picsum.photos/seed/kyungdong-campus/1600/1200" alt="" loading="lazy"/>
+      <div class="uni-tile-text">
+        <p class="overline overline--light">Goseong · Bachelor's, Master's</p>
+        <h3>Kyungdong<br/>University</h3>
+        <p class="uni-line">A KUAC flagship partner — strong international support across business, hospitality, healthcare, and global studies.</p>
+      </div>
+    </a>
 
-      <article class="uni-card">
-        <div class="uni-photo uni-photo--1"></div>
-        <div class="uni-body">
-          <div class="uni-tags"><span>Seoul</span><span>English</span><span>Scholarship</span></div>
-          <h3>Yonsei University</h3>
-          <p>Underwood International College — Bachelor's, 100% English-taught. Scholarships available for qualifying applicants.</p>
-          <a href="#" class="link-arrow">View programs →</a>
-        </div>
-      </article>
+    <a href="#" class="uni-tile">
+      <img src="https://picsum.photos/seed/yonsei-quad/1000/800" alt="" loading="lazy"/>
+      <div class="uni-tile-text">
+        <p class="overline overline--light">Seoul · English-taught</p>
+        <h3>Yonsei University</h3>
+      </div>
+    </a>
 
-      <article class="uni-card">
-        <div class="uni-photo uni-photo--2"></div>
-        <div class="uni-body">
-          <div class="uni-tags"><span>Daejeon</span><span>STEM</span><span>Research</span></div>
-          <h3>KAIST</h3>
-          <p>Master's &amp; PhD in CS, AI, EE, and Bio. Generous scholarships for top international applicants.</p>
-          <a href="#" class="link-arrow">View programs →</a>
-        </div>
-      </article>
+    <a href="#" class="uni-tile">
+      <img src="https://picsum.photos/seed/kaist-research/1000/800" alt="" loading="lazy"/>
+      <div class="uni-tile-text">
+        <p class="overline overline--light">Daejeon · STEM research</p>
+        <h3>KAIST</h3>
+      </div>
+    </a>
 
-      <article class="uni-card">
-        <div class="uni-photo uni-photo--3"></div>
-        <div class="uni-body">
-          <div class="uni-tags"><span>Suwon</span><span>Korean</span><span>International</span></div>
-          <h3>Ajou University</h3>
-          <p>Graduate School of International Studies. Bachelor's, Master's, and PhD with KUAC-supported scholarships.</p>
-          <a href="#" class="link-arrow">View programs →</a>
-        </div>
-      </article>
-    </div>
+    <a href="#" class="uni-tile">
+      <img src="https://picsum.photos/seed/ajou-international/1000/800" alt="" loading="lazy"/>
+      <div class="uni-tile-text">
+        <p class="overline overline--light">Suwon · International</p>
+        <h3>Ajou University</h3>
+      </div>
+    </a>
   </div>
 </section>
 
-<!-- Scholarships -->
-<section class="scholarships" id="scholarships">
-  <div class="container">
-    <header class="section-head section-head--center">
-      <p class="eyebrow">Scholarships</p>
-      <h2>You probably qualify for more than you think.</h2>
+<!-- ============== SCHOLARSHIPS — editorial dark band ============== -->
+<section class="scholarships-band" id="scholarships">
+  <div class="band-grid">
+    <header>
+      <p class="overline overline--light">Scholarships</p>
+      <h2 class="display-h2">You probably qualify for more than you think.</h2>
+      <p class="band-lede">From the Korean government's GKS program to university-funded support, we map your profile to every scholarship you're eligible for and help you write the application that wins it.</p>
     </header>
 
-    <div class="schol-grid">
-      <article class="schol-card schol-card--feature">
-        <p class="schol-tag">Government of Korea Scholarship</p>
+    <div class="band-list">
+      <article>
+        <p class="schol-overline">Government of Korea</p>
         <h3>GKS — Global Korea Scholarship</h3>
-        <ul>
-          <li>Full tuition support, with a monthly living allowance</li>
-          <li>One year of Korean language training, included</li>
-          <li>Round-trip airfare and settlement allowance</li>
-        </ul>
-        <a href="#" class="btn btn-light">Check my eligibility</a>
+        <p>Full tuition support, monthly living allowance, one year of Korean language training, return airfare, and a settlement allowance.</p>
       </article>
-
-      <article class="schol-card">
-        <p class="schol-tag">University-funded</p>
+      <article>
+        <p class="schol-overline">University-funded</p>
         <h3>University Scholarships</h3>
-        <p>Partial-to-full scholarships available at every KUAC partner university, awarded on academic merit and TOPIK level.</p>
-        <a href="#" class="link-arrow">See all schemes →</a>
+        <p>Partial-to-full scholarships at every KUAC partner, awarded on academic merit and TOPIK level.</p>
       </article>
-
-      <article class="schol-card">
-        <p class="schol-tag">Need-based</p>
-        <h3>KUAC Bridge Grant</h3>
-        <p>Support for admitted students from underrepresented backgrounds. We help you find the right grant and write a winning application.</p>
-        <a href="#" class="link-arrow">Apply for bridge grant →</a>
+      <article>
+        <p class="schol-overline">KUAC-led</p>
+        <h3>The Bridge Grant</h3>
+        <p>Support for admitted students from underrepresented backgrounds — we help find the right grant and craft a winning case.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Stories -->
+<!-- ============== STORIES — feature quote ============== -->
 <section class="stories" id="stories">
-  <div class="container">
-    <header class="section-head">
-      <p class="eyebrow">Student stories</p>
-      <h2>Real students. Real Seoul.</h2>
-    </header>
+  <header class="section-mast">
+    <p class="overline">Stories</p>
+    <h2 class="display-h2">Real students. Real Seoul.</h2>
+  </header>
 
-    <div class="stories-grid">
-      <article class="story">
-        <blockquote>"I sent KUAC my transcripts at 11pm from Kathmandu. By the next morning I had a shortlist, a scholarship plan, and a Zoom call booked. Three months later I was at Seoul Station."</blockquote>
-        <footer>
-          <strong>Aisha P.</strong>
-          <span>MS Computer Science · Seoul National University · GKS Scholar</span>
-        </footer>
-      </article>
-
-      <article class="story">
-        <blockquote>"My visa was rejected once before I found KUAC. They rebuilt my file from scratch — financial statements, COE, embassy interview prep. Approved in a week."</blockquote>
-        <footer>
-          <strong>Daniyar K.</strong>
-          <span>BBA · Yonsei University · From Tashkent</span>
-        </footer>
-      </article>
-
-      <article class="story">
-        <blockquote>"I didn't speak any Korean. KUAC's Suwon team picked me up at Incheon, took me to my dorm, and got me a SIM card. I didn't feel alone for one minute."</blockquote>
-        <footer>
-          <strong>Priya R.</strong>
-          <span>BA International Studies · Korea University · From Chennai</span>
-        </footer>
-      </article>
+  <article class="story-feature">
+    <div class="story-photo">
+      <img src="https://picsum.photos/seed/aisha-portrait/1200/1500" alt="" loading="lazy"/>
     </div>
+    <blockquote>
+      <p>"I sent KUAC my transcripts at 11pm from Kathmandu. By the next morning I had a shortlist, a scholarship plan, and a Zoom call booked. Three months later I was at Seoul Station."</p>
+      <footer>
+        <strong>Aisha P.</strong>
+        <span>MS Computer Science · Seoul National University · GKS Scholar</span>
+      </footer>
+    </blockquote>
+  </article>
+
+  <div class="story-pair">
+    <article class="story-card">
+      <blockquote>
+        <p>"My visa was rejected once before I found KUAC. They rebuilt my file from scratch. Approved in a week."</p>
+        <footer><strong>Daniyar K.</strong><span>BBA · Yonsei University · Tashkent</span></footer>
+      </blockquote>
+    </article>
+    <article class="story-card">
+      <blockquote>
+        <p>"I didn't speak any Korean. KUAC's Suwon team picked me up at Incheon, took me to my dorm, got me a SIM card. I didn't feel alone for one minute."</p>
+        <footer><strong>Priya R.</strong><span>BA International Studies · Korea University · Chennai</span></footer>
+      </blockquote>
+    </article>
   </div>
 </section>
 
-<!-- For universities -->
+<!-- ============== UNIVERSITIES PARTNERSHIP CTA ============== -->
 <section class="for-uni">
-  <div class="container for-uni-row">
-    <div>
-      <p class="eyebrow eyebrow--light">For universities</p>
-      <h2>Looking to recruit international students?</h2>
-      <p>KUAC partners with Korean universities to deliver vetted, complete, application-ready candidates from 10+ countries — backed by local recruiting teams across Asia and Africa.</p>
-    </div>
+  <div class="for-uni-inner">
+    <p class="overline overline--light">For universities</p>
+    <h2 class="display-h2">Looking to recruit international students?</h2>
+    <p>KUAC partners with Korean universities to deliver vetted, complete, application-ready candidates from 10+ countries — backed by recruiting teams across Asia and Africa.</p>
     <div class="for-uni-actions">
-      <a href="#contact" class="btn btn-on-dark">Become a partner</a>
-      <a href="#" class="link-on-dark">Download partnership deck →</a>
+      <a href="#contact" class="cta-on-dark">Become a partner →</a>
+      <a href="#" class="cta-text-on-dark">Download the partnership deck</a>
     </div>
   </div>
 </section>
 
-<!-- Apply / Final CTA -->
-<section class="cta" id="apply">
-  <div class="container cta-card">
-    <div>
-      <p class="eyebrow">20-minute counselling call</p>
-      <h2>Tell us where you want to be in 12 months.</h2>
-      <p>One form. One counsellor. No obligation. We'll come back within a day with a shortlist of universities, scholarships you qualify for, and a step-by-step plan.</p>
+<!-- ============== APPLY ============== -->
+<section class="apply" id="apply">
+  <div class="apply-grid">
+    <div class="apply-copy">
+      <p class="overline">Take the first step</p>
+      <h2 class="display-h2">Tell us where you want to be in 12 months.</h2>
+      <p>One form, one counsellor, no obligation. We'll come back within a day with a shortlist of universities, the scholarships you qualify for, and a step-by-step plan.</p>
     </div>
-    <form class="cta-form">
+    <form class="apply-form">
       <label>Your name<input type="text" required placeholder="Aisha Patel" /></label>
       <label>Email<input type="email" required placeholder="you@email.com" /></label>
       <label>Country<input type="text" required placeholder="Nepal" /></label>
       <label>What do you want to study?
         <select>
-          <option>Bachelor's</option><option>Master's</option><option>PhD</option><option>Korean language</option>
+          <option>Bachelor's</option>
+          <option>Master's</option>
+          <option>PhD</option>
+          <option>Korean language</option>
         </select>
       </label>
-      <button type="submit" class="btn btn-primary btn-lg btn-block">Book my counselling call</button>
+      <button type="submit" class="cta-primary cta-block">Book my counselling call →</button>
       <p class="micro">By submitting you agree to our privacy policy. We never sell your data.</p>
     </form>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="site-footer" id="contact">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <span class="brand-mark"><span class="bm-k">K</span><span class="bm-u">U</span><span class="bm-a">A</span><span class="bm-c">C</span></span>
-      <p>Korean Universities Admission Center. The official end-to-end gateway to Korea's top universities for international students since 2014.</p>
+<!-- ============== FOOTER ============== -->
+<footer class="footer" id="contact">
+  <div class="footer-grid">
+    <div>
+      <span class="logo-mark"><span class="bm-k">K</span><span class="bm-u">U</span><span class="bm-a">A</span><span class="bm-c">C</span></span>
+      <p>Korean Universities Admission Center. Bringing international students to Korea's top universities since 2014.</p>
     </div>
-
     <div>
       <h4>Head office</h4>
       <p>2002-ho, Jungdong Benesta<br/>252 Gilju-ro, Bucheon-si<br/>Gyeonggi-do, Republic of Korea</p>
       <p><a href="tel:+82323239652">+82 32 323 9652</a><br/><a href="mailto:info@ku-ac.com">info@ku-ac.com</a></p>
     </div>
-
     <div>
       <h4>For students</h4>
       <ul>
-        <li><a href="#universities">Find a university</a></li>
+        <li><a href="#universities">Universities</a></li>
         <li><a href="#scholarships">Scholarships</a></li>
-        <li><a href="#process">Application process</a></li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#">Visa guide</a></li>
-        <li><a href="#">TOPIK prep</a></li>
+        <li><a href="#">TOPIK preparation</a></li>
       </ul>
     </div>
-
     <div>
       <h4>For universities</h4>
       <ul>
-        <li><a href="#">Become a partner</a></li>
+        <li><a href="#">Partner with us</a></li>
         <li><a href="#">Recruitment services</a></li>
         <li><a href="#">Roadshows</a></li>
-        <li><a href="#">Press &amp; news</a></li>
+        <li><a href="#">News</a></li>
       </ul>
     </div>
   </div>
-  <div class="container footer-base">
+  <div class="footer-base">
     <small>© 2026 KUAC · Business Reg. 130-86-78730 · All rights reserved.</small>
     <div class="footer-meta">
       <a href="#">Privacy policy</a>

@@ -1,11 +1,19 @@
-// Sticky-header shadow on scroll
-const header = document.getElementById('siteHeader');
-const onScroll = () => {
-  if (window.scrollY > 8) header.classList.add('is-scrolled');
-  else header.classList.remove('is-scrolled');
-};
-window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
+/* KUAC redesign — interactions */
+
+const masthead = document.getElementById('masthead');
+const hero = document.querySelector('.hero');
+
+// Flip masthead from over-dark-photo to light-fixed when we scroll past the hero
+const heroObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) masthead.classList.remove('is-light');
+      else masthead.classList.add('is-light');
+    });
+  },
+  { rootMargin: '-80px 0px 0px 0px', threshold: 0 }
+);
+if (hero) heroObserver.observe(hero);
 
 // Mobile drawer
 const hamburger = document.getElementById('hamburger');
@@ -16,46 +24,52 @@ hamburger.addEventListener('click', () => {
   if (open) drawer.removeAttribute('hidden');
   else drawer.setAttribute('hidden', '');
 });
-drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  hamburger.classList.remove('is-open');
-  hamburger.setAttribute('aria-expanded', 'false');
-  drawer.setAttribute('hidden', '');
-}));
+drawer.querySelectorAll('a').forEach((a) =>
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('hidden', '');
+  })
+);
 
 // Language toggle (visual only)
-document.querySelectorAll('.lang-btn').forEach(btn => {
+document.querySelectorAll('.lang button').forEach((btn) => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('is-active'));
-    btn.classList.add('is-active');
+    document.querySelectorAll('.lang button').forEach((b) => b.classList.remove('is-on'));
+    btn.classList.add('is-on');
   });
 });
 
-// Reveal-on-scroll for major sections
-const targets = document.querySelectorAll(
-  '.section-head, .why-card, .steps li, .uni-card, .schol-card, .story, .cta-card, .for-uni-row > *'
+// Reveal on scroll
+const revealTargets = document.querySelectorAll(
+  '.section-mast, .split, .timeline li, .uni-tile, .band-list article, .story-feature, .story-card, .apply-grid, .feature-stats > *'
 );
-targets.forEach(el => el.classList.add('reveal'));
+revealTargets.forEach((el) => el.classList.add('reveal'));
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  },
+  { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+);
+revealTargets.forEach((el) => revealObserver.observe(el));
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('is-visible');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-targets.forEach(el => io.observe(el));
-
-// Prevent fake form submission
-document.querySelectorAll('form').forEach(f => {
+// Block fake form submissions
+document.querySelectorAll('form').forEach((f) => {
   f.addEventListener('submit', (e) => {
     e.preventDefault();
     const btn = f.querySelector('button[type="submit"]');
     if (!btn) return;
-    const original = btn.textContent;
-    btn.textContent = 'Mockup — wire this up to KUAC backend';
+    const original = btn.innerHTML;
+    btn.innerHTML = 'Mockup — wire to KUAC backend';
     btn.disabled = true;
-    setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 2200);
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.disabled = false;
+    }, 2200);
   });
 });
