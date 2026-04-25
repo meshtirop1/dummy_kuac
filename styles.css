@@ -75,6 +75,7 @@ input, select, textarea { font: inherit; color: inherit; }
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.92;
+  color: #fff;
 }
 .display .line { display: block; }
 .display .line-accent {
