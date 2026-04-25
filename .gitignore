@@ -1,0 +1,21 @@
+# Editor / IDE
+.vscode/
+.idea/
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency / build artefacts (none expected for this static site, but safe)
+node_modules/
+dist/
+.cache/
+
+# Netlify CLI local state
+.netlify/
