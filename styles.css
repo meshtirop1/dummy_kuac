@@ -43,7 +43,10 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;   /* keep section heads clear of the sticky masthead */
+}
 body {
   margin: 0;
   font-family: var(--sans);
@@ -674,8 +677,12 @@ p { margin: 0 0 1em; }
 .uni-tile:hover img { transform: scale(1.06); filter: saturate(1.05); }
 .uni-tile::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 35%, rgba(6,8,15,.85) 100%);
+  background:
+    linear-gradient(180deg, rgba(6,8,15,0) 35%, rgba(6,8,15,.78) 78%, rgba(6,8,15,.95) 100%),
+    linear-gradient(180deg, rgba(6,8,15,.25) 0%, transparent 30%);
 }
+.uni-tile-text h3,
+.uni-tile-text .uni-line { text-shadow: 0 2px 16px rgba(0,0,0,.55); }
 .uni-tile-text {
   position: absolute; left: 28px; right: 28px; bottom: 24px;
   z-index: 1;
@@ -1001,17 +1008,63 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 640px) {
+  html { scroll-padding-top: 70px; }
   .masthead .logo-sub { display: none; }
   .masthead-actions .pill { display: none; }
+  .masthead.is-light { padding: 10px var(--gutter); }
+  .hero { padding-bottom: 80px; }
   .hero-tagline { font-size: 1rem; }
   .hero-actions { gap: 18px; }
   .hero-actions .cta-primary { padding: 14px 22px; font-size: 0.9rem; }
-  .feature-stats { grid-template-columns: 1fr 1fr; gap: 22px; }
+  .hero-meta { right: 16px; bottom: 18px; }
+  .hero-meta .hangul { font-size: 2rem; }
+
+  .feature { padding: 70px var(--gutter); }
+  .feature-stats { grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; padding-top: 30px; }
+  .hangul-large { font-size: 5.5rem; }
+
+  .split { padding: 36px var(--gutter); gap: 24px; }
+  .split-image { aspect-ratio: 4 / 3; }
+  .split-text { padding: 0; }
+  .split-text p { font-size: 1rem; }
+
   .uni-grid { grid-template-columns: 1fr; grid-auto-rows: 280px; }
-  .timeline li { grid-template-columns: 60px 1fr; gap: 18px; padding: 26px 0; }
-  .timeline::before { left: calc(var(--gutter) + 22px); }
-  .t-num { font-size: 2.2rem; }
-  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-  .apply-form { padding: 28px; }
+  .uni-tile-text { left: 22px; right: 22px; bottom: 22px; }
+  .uni-tile--lg .uni-tile-text h3 { font-size: 2rem; }
+
+  .timeline li { grid-template-columns: 56px 1fr; gap: 16px; padding: 24px 0; }
+  .timeline::before { left: calc(var(--gutter) + 20px); }
+  .t-num { font-size: 2rem; }
+
+  .scholarships-band { padding: 60px var(--gutter); }
+  .band-list { gap: 28px; }
+  .band-list article { padding-top: 24px; }
+
+  .stories { padding: 60px 0; }
+  .story-feature { margin-bottom: 60px; gap: 28px; }
   .story-feature blockquote::before { font-size: 5rem; top: -34px; }
+
+  .for-uni { padding: 60px var(--gutter); }
+  .apply { padding: 60px var(--gutter); }
+  .apply-form { padding: 24px; }
+  .apply-form .cta-primary { padding: 14px 18px; font-size: 0.88rem; }
+
+  .footer { padding: 60px var(--gutter) 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; padding-bottom: 36px; }
+  .footer-base { flex-direction: column; align-items: flex-start; }
+}
+
+/* Extra-small (≤360px) — iPhone SE etc */
+@media (max-width: 360px) {
+  :root { --gutter: 18px; }
+  .display { font-size: 2.6rem; }
+  .display-h2 { font-size: 1.75rem; }
+  .display-quote { font-size: 1.25rem; }
+  .hangul-large { font-size: 4.5rem; }
+  .stat-num { font-size: 2.2rem; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .hero-actions .cta-primary { width: 100%; justify-content: center; }
+  .marquee-row { font-size: 1rem; gap: 8px 16px; }
+  .uni-tile-text h3 { font-size: 1.4rem; }
+  .uni-tile--lg .uni-tile-text h3 { font-size: 1.7rem; }
 }
